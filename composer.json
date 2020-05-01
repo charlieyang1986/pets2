@@ -1,0 +1,21 @@
+{
+  "name": "chunhai/328/pets2",
+  "authors": [
+    {
+          "name": "Chunhai Yang",
+          "email": "cyang21@mail.greenriver.edu"
+    },
+    {
+      "name": "Dmytro Boichuk",
+      "email": "dboichuk@mail.greenriver.edu"
+    },
+    {
+      "name": "Aaron Tadina",
+      "email": "atadina@mail.greenriver.edu"
+    }
+
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
