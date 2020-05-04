@@ -24,7 +24,7 @@ $f3->route('GET|POST /order', function($f3) {
     }
     else{
         $_SESSION['pet']=$_POST['petkind'];
-        $f3->reroute("summary");
+        $f3->reroute("order");
     }
     $view = new Template();
     echo $view->render('views/pet-order.html');
