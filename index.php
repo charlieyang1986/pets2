@@ -22,8 +22,10 @@ $f3->route('GET|POST /order', function($f3) {
             echo "Please supply a pet type";
         } else {
             $_SESSION['pet'] = $_POST['petkind'];
+
             $_SESSION['color'] = $_POST['color'];
             $f3->reroute("summary");
+
         }
     }
     $view = new Template();
