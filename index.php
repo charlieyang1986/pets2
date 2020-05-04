@@ -17,14 +17,13 @@ $f3->route('GET /', function() {
 });
 
 $f3->route('GET|POST /order', function($f3) {
-    if($_SERVER['REQUEST_METHOD']=='POST'){
-        if(empty($_POST['petkind'])){
+    if($_SERVER['REQUEST_METHOD']=='POST') {
+        if (empty($_POST['petkind'])) {
             echo "Please supply a pet type";
-        }
-    }
-    else{
-        $_SESSION['pet']=$_POST['petkind'];
+        } else {
+            $_SESSION['pet'] = $_POST['petkind'];
         $f3->reroute("summary");
+        }
     }
     $view = new Template();
     echo $view->render('views/pet-order.html');
